@@ -6,7 +6,7 @@
       "name": "mobirise-amp",
       "title": "Mobirise AMP",
       "styling": {
-        "primaryColor": "#efefef",
+        "primaryColor": "#0e0e87",
         "secondaryColor": "#4addff",
         "successColor": "#0dcd7b",
         "infoColor": "#8282e7",
@@ -35,7 +35,7 @@
     "path": "@PROJECT_PATH@",
     "versionFirst": "4.9.5",
     "siteFonts": [],
-    "uniqCompNum": 31,
+    "uniqCompNum": 32,
     "versionPublish": "4.9.7",
     "screenshot": "screenshot.png"
   },
@@ -1268,6 +1268,22 @@
           "_styles": {
             "padding-top": "(@paddingTop * 15px)",
             "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor"
+          },
+          "_name": "content5",
+          "_customHTML": "<section class=\"mbr-section content5\" plugins=\"amp-main\" group=\"Article\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"color\" title=\"Backgroud Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-container\">\n        <div class=\"mbr-section-btn align-center\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-primary-outline\" href=\"https://www.facebook.com/AcctaxsaPtyLtd/\" data-app-placeholder=\"Type Text\" target=\"_blank\">Follow us on Facebook</a></div>\n    </div>\n</section>",
+          "_cid": "rpeThRaoov",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "content5-v"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
             "background-color": "@bgColor",
             ".google-map": {
               "height": "25rem",
@@ -1322,45 +1338,6 @@
           "_global": false,
           "_once": false,
           "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "background-color": "@bgColor",
-            "h1": {
-              "margin-bottom": "20px"
-            },
-            ".wrapper": {
-              "text-align": "center"
-            },
-            ".icons-list": {
-              "a": {
-                "display": "inline-block",
-                "padding": "1rem",
-                "margin": ".5rem",
-                "background": "@iconsBg",
-                ".iconfont-wrapper": {
-                  "display": "inline-block",
-                  "width": "~\"@{iconsSize}rem\"",
-                  "height": "~\"@{iconsSize}rem\"",
-                  ".amp-iconfont": {
-                    "color": "contrast(@iconsBg, darken(@iconsBg, 50%), #ffffff, 60%)",
-                    "font-size": "~\"@{iconsSize}rem\""
-                  }
-                }
-              }
-            }
-          },
-          "_name": "social-follow",
-          "_customHTML": "<section class=\"social-follow\" group=\"Social\" plugins=\"amp-main\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"1\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"0\" step=\"1\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"range\" inline title=\"Icons Count\" name=\"iconsCount\" min=\"1\" max=\"10\" value=\"1\" step=\"1\">\n        <input type=\"range\" inline title=\"Icons Size\" name=\"iconsSize\" min=\"1\" max=\"5\" step=\"0.1\" value=\"2.5\">\n        <input type=\"color\" name=\"iconsBg\" title=\"Icons Bg\" value=\"#0e0e87\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"wrapper\">\n        <h1 class=\"mbr-fonts-style align-center mbr-light\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\">\n            Follow Us\n        </h1>\n        <div class=\"icons-list\" mbr-list mbr-list-grow=\"iconsCount\">\n            <a href=\"https://www.facebook.com/AcctaxsaPtyLtd/\" target=\"_blank\">\n                <span class=\"iconfont-wrapper\">\n                    <span mbr-icon class=\"amp-iconfont fa-facebook-official fa\"></span>\n                </span>\n            </a>\n            \n            \n            \n                \n                \n                \n                \n            </div>\n        </div>\n    </section>",
-          "_cid": "rpeSc292RH",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {},
-          "_anchor": "social-follow-u"
         },
         {
           "alias": false,
